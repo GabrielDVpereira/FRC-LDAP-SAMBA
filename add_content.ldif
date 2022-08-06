@@ -1,0 +1,70 @@
+dn: ou=People,dc=ponto,dc=com
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=Groups,dc=ponto,dc=com
+objectClass: organizationalUnit
+ou: Groups
+
+dn: cn=professores,ou=Groups,dc=ponto,dc=com
+objectClass: posixGroup
+cn: professores
+gidNumber: 5000
+
+dn: cn=alunos,ou=Groups,dc=ponto,dc=com
+objectClass: posixGroup
+cn: alunos
+gidNumber: 5001
+
+dn: cn=pesquisadores,ou=Groups,dc=ponto,dc=com
+objectClass: posixGroup
+cn: pesquisadores
+gidNumber: 5002
+
+dn: uid=joao,ou=People,dc=ponto,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: joao
+sn: Pedro
+givenName: Joao
+cn: Joao Pedro
+displayName: Joao
+uidNumber: 10000
+gidNumber: 5000
+userPassword: {CRYPT}x
+gecos: Joao Pedro
+loginShell: /bin/bash
+homeDirectory: /home/john
+
+dn: uid=gabriel,ou=People,dc=ponto,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: gabriel
+sn: Davi
+givenName: Gabriel
+cn: Gabriel Davi
+displayName: Gabriel
+uidNumber: 10000
+gidNumber: 5001
+userPassword: {CRYPT}x
+gecos: Gabriel Davi
+loginShell: /bin/bash
+homeDirectory: /home/gabriel
+
+dn: uid=iuri,ou=People,dc=ponto,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: iuri
+sn: Severo
+givenName: Iuri
+cn: Iuri Severo
+displayName: Iuri Severo
+uidNumber: 10000
+gidNumber: 5001
+userPassword: {CRYPT}x
+gecos: Iuri Severo
+loginShell: /bin/bash
+homeDirectory: /home/iuri
