@@ -1,0 +1,7 @@
+
+rganization = Example Company
+cn = ldap01.ponto.com
+tls_www_server
+encryption_key
+signing_key
+expiration_days = 365
